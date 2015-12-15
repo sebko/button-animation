@@ -17,7 +17,7 @@ body {
 }
 .checkSVG {
     animation: checkSVG .5s ease forwards;
-    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
 }
 .checkmark {
     stroke: none;
@@ -28,7 +28,7 @@ body {
     stroke-width: 20;
     stroke-miterlimit: 400;
     animation: check .7s ease forwards;
-    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
 }
 .circle {
     cx: 275;
