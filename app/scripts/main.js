@@ -1,3 +1,3 @@
 $("button").on( "click", function() {
-  $("button").toggleClass('animate');
+  $("button").toggleClass('pulse-animate width-animate');
 });

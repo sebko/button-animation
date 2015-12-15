@@ -33,18 +33,27 @@ button.make-payment {
   padding: 10px;
 }
 
-button.animate {
-  animation: pulse 5s;
-  border: 2px solid white;
-  span {
-    display: none;
-  }
-  &:after {
-    content: '✓';
-  }
+.pulse-animate {
+  animation: pulse-animation 10s;
+  animation-delay: 1s;
 }
 
-@keyframes width {
+.width-animate {
+  animation: width-animation 5s;
+}
+
+// button.animate {
+//   animation: pulse 5s;
+//   border: 2px solid white;
+//   span {
+//     display: none;
+//   }
+//   &:after {
+//     content: '✓';
+//   }
+// }
+
+@keyframes width-animation {
     from {
       width: width-start;
     }
@@ -54,14 +63,18 @@ button.animate {
 }
 
 
-@keyframes pulse {
+@keyframes pulse-animation {
     0% {
         transform: none;
     }
     80% {
-        transform: scale(1.2);
+        transform: scale(1.5);
     }
     100% {
         transform: scale(1);
     }
 }
+
+//
+// animation: check .7s ease forwards;
+// -webkit-animation-delay: .7s;
